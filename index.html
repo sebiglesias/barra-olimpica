@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Discos de Barra Olímpica y 1RM | Carga Visual IWF</title>
+  <meta name="description" content="Calcula online cómo cargar la barra olímpica con discos de colores oficiales IWF por lado. Incluye calculadora de 1RM y series de aproximación para gym y powerlifting.">
+  <meta name="keywords" content="calculadora barra olimpica discos, calculadora discos gym, calcular 1rm, colores discos barra olimpica, plate calculator crossfit, series de aproximacion fuerza">
+  <link rel="canonical" href="https://sebiglesias.com.ar/barra-olimpica/">
+  <meta name="google-adsense-account" content="ca-pub-3381238987477190">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Calculadora de Discos de Barra Olímpica y 1RM | Carga Visual IWF">
+  <meta property="og:description" content="Calcula al instante qué discos cargar en cada manga de tu barra con visualizador gráfico IWF y cálculo de 1RM.">
+  <meta property="og:url" content="https://sebiglesias.com.ar/barra-olimpica/">
+  <meta property="og:image" content="https://sebiglesias.com.ar/barra-olimpica/icon.svg">
+
+  <!-- Icons & PWA -->
+  <link rel="icon" type="image/svg+xml" href="icon.svg">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#09090b">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2BNDBQP0W7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-2BNDBQP0W7');
+  </script>
+
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3381238987477190" crossorigin="anonymous"></script>
+
+  <!-- Structured Data JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://sebiglesias.com.ar/barra-olimpica/#webapp",
+        "name": "Calculadora de Discos de Barra Olímpica y 1RM",
+        "url": "https://sebiglesias.com.ar/barra-olimpica/",
+        "description": "Calculadora de carga de discos para barra olímpica con colores oficiales IWF y estimación de 1RM para entrenamiento de fuerza.",
+        "applicationCategory": "HealthApplication",
+        "operatingSystem": "All",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://sebiglesias.com.ar/barra-olimpica/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Cuáles son los colores oficiales de los discos de barra olímpica según la IWF?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La Federación Internacional de Halterofilia (IWF) establece el siguiente código universal de colores para discos de 450 mm de diámetro exterior: 25 kg en color Rojo, 20 kg en color Azul, 15 kg en color Amarillo y 10 kg en color Verde. Los discos fraccionarios o de cambio más pequeños son: 5 kg en Blanco, 2.5 kg en Negro, 1.25 kg en Plata/Gris y 0.5 kg en Violeta/Blanco."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto pesa una barra olímpica estándar?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La barra olímpica estándar para hombres mide 2.20 metros y pesa exactamente 20 kg (con agarre de 28 mm a 29 mm de diámetro). La barra olímpica femenina mide 2.01 metros, pesa 15 kg y tiene un agarre más fino de 25 mm. También existen barras técnicas o junior de 10 kg y barras hexagonales (trap bars) que rondan los 25 kg a 30 kg."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cómo se calcula el 1RM (Una Repetición Máxima)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "El 1RM representa la cantidad máxima de peso que puedes levantar en una sola repetición con técnica estricta. Se calcula a partir de series submáximas (de 2 a 10 repeticiones) mediante fórmulas validadas como la fórmula de Epley: 1RM = Peso × (1 + Reps / 30) o la fórmula de Brzycki: 1RM = Peso / (1.0278 - 0.0278 × Reps)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cómo organizar las series de aproximación antes de una serie pesada?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Una pirámide de calentamiento eficiente para powerlifting y fuerza suele estructurarse en: Serie 1 (50% de 1RM por 5 reps), Serie 2 (70% por 3 reps), Serie 3 (80% por 2 reps) y Serie 4 (90% por 1 rep). Esto lubrica las articulaciones y activa el sistema nervioso central sin acumular fatiga metabólica previa a la serie efectiva."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="icon.svg" alt="Barra Olímpica Icon" class="brand-icon">
+        <div>
+          <h1 class="brand-title">Barra Olímpica &amp; 1RM <span class="brand-badge">IWF</span></h1>
+          <a href="https://sebiglesias.com.ar" class="back-link">← Volver a sebiglesias.com.ar</a>
+        </div>
+      </div>
+      <button id="theme-toggle" class="theme-toggle-btn" aria-label="Cambiar tema">☀️</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Presets bar -->
+    <div class="presets-bar">
+      <span class="presets-label">Levantamientos rápidos:</span>
+      <button class="preset-chip" data-preset="bench100">🏋️ Bench Press 100 kg</button>
+      <button class="preset-chip" data-preset="deadlift140">⚡ Peso Muerto 140 kg</button>
+      <button class="preset-chip" data-preset="squat120">🦵 Sentadilla 120 kg</button>
+      <button class="preset-chip" data-preset="ohp60">💪 Press Militar 60 kg</button>
+      <button class="preset-chip" data-preset="empty20">Barra 20 kg</button>
+    </div>
+
+    <!-- Visual Barbell Canvas Card -->
+    <div class="visual-barbell-card">
+      <div class="barbell-view-header">
+        <div>
+          <span id="display-total" class="total-weight-display">100.0</span>
+          <span class="weight-unit-badge">kg</span>
+        </div>
+        <div id="display-per-side" class="per-side-display">
+          Cargar en cada manga: 40.0 kg
+        </div>
+      </div>
+
+      <!-- SVG Graphic of Barbell Sleeve -->
+      <div class="barbell-graphic-wrapper">
+        <svg id="barbell-svg" class="barbell-svg" viewBox="0 0 540 160" preserveAspectRatio="xMidYMid meet">
+          <defs>
+            <linearGradient id="steelGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#e4e4e7"/>
+              <stop offset="50%" stop-color="#a1a1aa"/>
+              <stop offset="100%" stop-color="#52525b"/>
+            </linearGradient>
+            <linearGradient id="sleeveGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#f4f4f5"/>
+              <stop offset="30%" stop-color="#d4d4d8"/>
+              <stop offset="100%" stop-color="#71717a"/>
+            </linearGradient>
+          </defs>
+          <!-- Dynamically populated via JS -->
+        </svg>
+      </div>
+    </div>
+
+    <!-- Main Grid -->
+    <div class="calc-grid">
+      <!-- Left Column: Barbell Plate Loader Controls -->
+      <section class="card">
+        <h2 class="card-title">
+          <span>🔩 Carga de la Barra</span>
+        </h2>
+
+        <div class="form-group">
+          <label class="form-label" for="input-target-weight">
+            <span>Peso Total Objetivo</span>
+            <span class="form-sublabel">Barra + discos incluidos</span>
+          </label>
+          <div class="input-with-unit">
+            <input type="number" id="input-target-weight" class="form-input" min="10" max="500" step="0.5" value="100">
+            <span class="input-unit">kg</span>
+          </div>
+
+          <div style="display: flex; gap: 8px; margin-top: 8px;">
+            <button class="preset-chip btn-weight-step" data-step="-10">-10 kg</button>
+            <button class="preset-chip btn-weight-step" data-step="-2.5">-2.5 kg</button>
+            <button class="preset-chip btn-weight-step" data-step="2.5">+2.5 kg</button>
+            <button class="preset-chip btn-weight-step" data-step="10">+10 kg</button>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="select-bar-weight">
+            <span>Tipo de Barra</span>
+          </label>
+          <select id="select-bar-weight" class="form-select">
+            <option value="20" selected>Barra Olímpica Masculina (20 kg / 2.20 m)</option>
+            <option value="15">Barra Olímpica Femenina (15 kg / 2.01 m)</option>
+            <option value="10">Barra Técnica / Junior (10 kg)</option>
+            <option value="25">Barra Hexagonal / Trap Bar (25 kg)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="select-collars-weight">
+            <span>Topes / Collares de Seguridad</span>
+          </label>
+          <select id="select-collars-weight" class="form-select">
+            <option value="0" selected>Topes de resorte / plástico ligeros (0 kg)</option>
+            <option value="0.5">Topes estándar (0.5 kg par)</option>
+            <option value="2.5">Topes de competición IWF (2.5 kg par)</option>
+          </select>
+        </div>
+
+        <h3 style="font-size: 0.92rem; font-weight: 800; color: var(--text-secondary); margin: 20px 0 10px; text-transform: uppercase;">
+          Discos a Colocar por Manga:
+        </h3>
+        <div id="plates-summary-list" class="plates-breakdown-list">
+          <!-- Dynamically populated via JS -->
+        </div>
+
+        <div class="action-toolbar" style="margin-top: 24px;">
+          <button id="btn-share" class="btn-primary">
+            <span>📲 Copiar Carga / WhatsApp</span>
+          </button>
+          <button id="btn-print" class="btn-secondary">
+            <span>🖨️ Imprimir</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Right Column: 1RM Calculator & Warmup Sets Ladder -->
+      <section class="card">
+        <h2 class="card-title">
+          <span>⚡ Calculadora de 1RM y Aproximación</span>
+        </h2>
+
+        <div class="form-group">
+          <label class="form-label" for="input-rep-weight">
+            <span>Peso Levantado en tu Serie</span>
+          </label>
+          <div class="input-with-unit">
+            <input type="number" id="input-rep-weight" class="form-input" min="5" max="400" step="2.5" value="80">
+            <span class="input-unit">kg</span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="input-reps">
+            <span>Repeticiones Realizadas (1 a 10)</span>
+          </label>
+          <input type="number" id="input-reps" class="form-input" min="1" max="15" value="5">
+        </div>
+
+        <div style="background: var(--bg-input); padding: 14px 18px; border-radius: var(--radius-sm); border: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+          <div>
+            <div style="font-size: 0.78rem; text-transform: uppercase; color: var(--text-muted); font-weight: 700;">1RM Estimado (1 Repetición Máxima)</div>
+            <div style="font-size: 0.82rem; color: var(--text-secondary);">Fórmulas de Epley y Brzycki</div>
+          </div>
+          <div id="display-1rm" style="font-size: 1.8rem; font-weight: 900; color: var(--accent);">
+            93 kg
+          </div>
+        </div>
+
+        <h3 style="font-size: 0.92rem; font-weight: 800; color: var(--text-secondary); margin-bottom: 8px; text-transform: uppercase;">
+          Escalera de Series de Aproximación:
+        </h3>
+        <p style="font-size: 0.78rem; color: var(--text-muted); margin-bottom: 12px;">
+          Toca cualquier porcentaje para cargar automáticamente la barra:
+        </p>
+        <div id="warmup-ladder" class="warmup-ladder-list">
+          <!-- Dynamically populated via JS -->
+        </div>
+      </section>
+    </div>
+
+    <!-- AdSense Banner Unit Container -->
+    <div class="ad-slot-container">
+      <div class="ad-disclaimer">Publicidad</div>
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-3381238987477190"
+           data-ad-slot="1234567890"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+
+    <!-- SEO Educational Guide Section -->
+    <article class="seo-section">
+      <h2>Guía Completa para Cargar la Barra Olímpica y Calcular tu 1RM</h2>
+      <p>
+        En el levantamiento de pesas olímpico (halterofilia), el powerlifting y el CrossFit, la correcta colocación de los discos en la barra olímpica sigue normativas estandarizadas internacionales para garantizar equilibrio biomecánico, seguridad en el soporte y una lectura visual instantánea del peso cargado.
+      </p>
+
+      <div class="seo-box">
+        <strong>🎨 Código de Color Oficial de la IWF (International Weightlifting Federation):</strong><br>
+        Todos los discos de tamaño olímpico (450 mm de diámetro exterior) siguen una jerarquía cromática estricta:
+        <ul style="margin-top: 8px; margin-left: 20px;">
+          <li><strong style="color: #ef4444;">🔴 Rojo:</strong> 25 kg (55 lb). El disco más pesado de competición.</li>
+          <li><strong style="color: #3b82f6;">🔵 Azul:</strong> 20 kg (45 lb). El estándar más habitual en gimnasios.</li>
+          <li><strong style="color: #eab308;">🟡 Amarillo:</strong> 15 kg (35 lb).</li>
+          <li><strong style="color: #22c55e;">🟢 Verde:</strong> 10 kg (25 lb). El disco bumper más fino de 450 mm.</li>
+          <li><strong style="color: #fafafa;">⚪ Blanco:</strong> 5 kg. Disco de diámetro reducido para saltos intermedios.</li>
+          <li><strong style="color: #a1a1aa;">⚫ Microdiscos:</strong> 2.5 kg (negro), 1.25 kg (plata) y 0.5 kg (violeta) para progresión de sobrecarga progresiva milimétrica.</li>
+        </ul>
+      </div>
+
+      <h3>¿Cómo Funciona el Algoritmo de Carga por Lado?</h3>
+      <p>
+        Para saber qué discos colocar en cada manga de la barra:
+      </p>
+      <ol style="margin-left: 20px; color: var(--text-secondary); line-height: 1.8;">
+        <li>Se descuenta la tara de la barra vacía y los collares del peso total objetivo: <code>Peso en Discos = Peso Objetivo - (Peso Barra + Collares)</code>.</li>
+        <li>El resultado se divide exactamente entre 2: <code>Peso por Manga = Peso en Discos / 2</code>.</li>
+        <li>Se cargan los discos desde el más pesado y grande hacia el más liviano (los más grandes quedan pegados a la campana interior de la barra), finalizando siempre con el collar o pinza de seguridad.</li>
+      </ol>
+
+      <h3>¿Qué es el 1RM y qué Fórmula es más Precisa?</h3>
+      <p>
+        El <strong>1RM (Una Repetición Máxima)</strong> es la carga máxima que un atleta puede mover una única vez con técnica perfecta. Intentar un 1RM real con frecuencia somete al sistema nervioso a una fatiga extrema y aumenta el riesgo de lesión, por lo que los entrenadores recomiendan estimarlo a partir de series de 3 a 8 repeticiones utilizando fórmulas biomecánicas:
+      </p>
+      <ul>
+        <li><strong>Fórmula de Epley:</strong> <code>1RM = Peso × (1 + Reps / 30)</code>. Considerada la más precisa para rangos entre 3 y 8 repeticiones en sentadilla y peso muerto.</li>
+        <li><strong>Fórmula de Brzycki:</strong> <code>1RM = Peso / (1.0278 - 0.0278 × Reps)</code>. Muy popular en press de banca y levantamientos de tren superior.</li>
+      </ul>
+
+      <!-- FAQ Accordion -->
+      <h3 style="margin-top: 36px;">Preguntas Frecuentes sobre Barra Olímpica y Entrenamiento</h3>
+      <div class="faq-accordion">
+        <div class="faq-item">
+          <div class="faq-question">¿Por qué los discos de 10 kg a 25 kg tienen todos el mismo diámetro de 450 mm? <span>▼</span></div>
+          <div class="faq-answer">
+            Los discos 'bumper' de caucho virgen tienen todos 450 mm de diámetro para que la barra quede siempre a la misma altura oficial del suelo (22.5 cm) durante los despegues de peso muerto o arrancadas (snatch), protegiendo la plataforma y distribuyendo el impacto del aterrizaje uniformemente sin importar el peso cargado.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">¿Es obligatorio usar collares / topes de seguridad? <span>▼</span></div>
+          <div class="faq-answer">
+            Sí. Durante levantamientos dinámicos como sentadillas o arrancadas, la barra flecta y los discos se deslizan hacia afuera. Si un disco se desplaza incluso 5 cm más que el del otro lado, se genera un torque asimétrico en la columna y la pelvis que puede provocar lesiones agudas de hombro o espalda baja.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">¿Por qué las series de aproximación no deben llegar al fallo muscular? <span>▼</span></div>
+          <div class="faq-answer">
+            El objetivo del calentamiento en fuerza no es generar hipertrofia ni bombear sangre, sino activar los husos musculares, optimizar el reclutamiento de unidades motoras y practicar el patrón técnico. Hacer series de muchas repeticiones antes de la serie pesada genera acumulación de ácido láctico y agotamiento de fosfocreatina.
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Related Apps Cluster -->
+    <div class="related-cluster">
+      <div class="related-title">
+        <span>🔗 Otras herramientas y calculadoras de precisión:</span>
+      </div>
+      <div class="related-links-grid">
+        <a href="https://sebiglesias.com.ar/camper-solar/" class="related-app-card">
+          <span>☀️ Calculadora Solar 12V</span>
+        </a>
+        <a href="https://sebiglesias.com.ar/cafe-ratio/" class="related-app-card">
+          <span>☕ Ratio Café de Especialidad</span>
+        </a>
+        <a href="https://sebiglesias.com.ar/dieta-barf/" class="related-app-card">
+          <span>🥩 Calculadora Dieta BARF</span>
+        </a>
+        <a href="https://sebiglesias.com.ar/masa-madre/" class="related-app-card">
+          <span>🍕 Calculadora Masa Madre</span>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Sticky Mobile Bar -->
+  <aside class="sticky-mobile-bar">
+    <div class="sticky-metric">
+      <span class="sticky-label">Peso total</span>
+      <span id="sticky-total" class="sticky-val">100.0 kg</span>
+    </div>
+    <div class="sticky-metric">
+      <span class="sticky-label">Por manga</span>
+      <span id="sticky-side" class="sticky-val">40.0 kg c/lado</span>
+    </div>
+    <button id="sticky-share-btn" class="sticky-btn">Compartir</button>
+  </aside>
+
+  <!-- Script -->
+  <script src="app.js"></script>
+</body>
+</html>

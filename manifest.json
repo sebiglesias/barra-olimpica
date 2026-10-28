@@ -1,0 +1,17 @@
+{
+  "name": "Calculadora de Discos de Barra Olímpica y 1RM",
+  "short_name": "Barra Olímpica",
+  "description": "Calcula cómo cargar la barra olímpica con discos por lado (colores IWF) y calcula tu 1RM y series de aproximación.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#09090b",
+  "theme_color": "#09090b",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
